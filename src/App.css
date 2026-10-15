@@ -1,0 +1,37 @@
+:root { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #172033; background: #f4f7fb; font-synthesis: none; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+button, input { font: inherit; }
+button { cursor: pointer; border: 0; border-radius: 9px; padding: 10px 15px; color: white; background: #2357d8; font-weight: 650; }
+button:hover { filter: brightness(.95); }
+.app { max-width: 1180px; margin: auto; padding: 28px 22px 16px; }
+.app-header { display: flex; justify-content: space-between; align-items: center; gap: 18px; margin-bottom: 26px; }
+.eyebrow { margin: 0 0 6px; color: #60708b; font-size: 12px; font-weight: 800; letter-spacing: .14em; }
+h1 { margin: 0; font-size: clamp(28px, 4vw, 42px); letter-spacing: -.04em; }
+h2 { margin: 0 0 16px; }
+.cart-badge { border: 1px solid #dce4f0; background: white; padding: 12px 16px; border-radius: 12px; font-weight: 750; white-space: nowrap; }
+.form-panel { background: white; border: 1px solid #e1e8f2; border-radius: 16px; padding: 22px; margin-bottom: 30px; box-shadow: 0 8px 28px #20375c0a; }
+.product-form { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+.product-form input { min-width: 0; width: 100%; border: 1px solid #d8e0ec; border-radius: 9px; padding: 12px; background: #fbfcfe; }
+.product-form input:focus { outline: 2px solid #a9c1ff; border-color: #2357d8; }
+.form-actions { display: flex; gap: 8px; }
+.secondary { background: #e8edf5; color: #24324a; }
+.danger { background: #b83245; }
+.section-heading { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+.section-heading span { color: #65748b; font-size: 14px; }
+.product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 18px; }
+.product-wrap { min-width: 0; }
+.product-card { height: 100%; background: white; border: 1px solid #e0e7f0; border-radius: 14px; overflow: hidden; }
+.product-card img, .image-placeholder { width: 100%; height: 170px; object-fit: contain; background: #f0f4fa; }
+.image-placeholder { display: grid; place-items: center; color: #78869a; }
+.card-body { padding: 15px; }
+.card-body h2 { font-size: 18px; margin: 0 0 8px; overflow-wrap: anywhere; }
+.card-body p { color: #65748b; line-height: 1.45; font-size: 14px; }
+.card-body .price { color: #172033; font-size: 20px; font-weight: 800; margin: 0; }
+.card-body .rating { font-size: 13px; }
+.crud-buttons { display: flex; gap: 8px; margin-top: 9px; }
+.crud-buttons button { flex: 1; }
+.status { text-align: center; padding: 22px; color: #5c6c83; }
+.status.error { color: #b83245; background: #fff0f1; border-radius: 10px; }
+footer { text-align: center; color: #7a8799; padding: 34px 0 10px; font-size: 13px; }
+@media (max-width: 700px) { .product-form { grid-template-columns: 1fr; } .app-header { align-items: flex-start; } .form-panel { padding: 16px; } }
